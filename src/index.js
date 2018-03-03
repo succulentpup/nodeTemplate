@@ -3,13 +3,13 @@ const Parser = require('body-parser');
 const Boom = require('express-boom');
 
 // Environment Checks
-if (!process.env.PORT || !process.env.NODE_ENV) {
+if (!process.env.SERVER_PORT || !process.env.NODE_ENV) {
   //TODO: Log.error('Configuration Error: you must specify the following ENV variables: PORT, NODE_ENV');
   console.log('Configuration Error: you must specify the following ENV variables: PORT, NODE_ENV');
   process.exit(1);
 }
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const app = express();
 const env = process.env.NODE_ENV;
 //TODO: add log middleware

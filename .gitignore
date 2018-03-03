@@ -1,3 +1,4 @@
 node_modules/
 testResults/
 .nyc*
+.env
