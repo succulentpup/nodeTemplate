@@ -9,7 +9,7 @@ if (!process.env.SERVER_PORT || !process.env.NODE_ENV) {
   process.exit(1);
 }
 
-const port = process.env.PORT;
+const port = process.env.SERVER_PORT;
 const app = express();
 const env = process.env.NODE_ENV;
 //TODO: add log middleware
