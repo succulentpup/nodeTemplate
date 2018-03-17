@@ -1,4 +1,5 @@
 # node_bp
+Create .env file and add the required environment variables.
 Almost there.
 Do the npm install and then start implement the endpoints in endpoints folder.
 The name of your endpoint is the name of your file excluding the .js extension.
